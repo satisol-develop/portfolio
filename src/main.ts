@@ -119,6 +119,9 @@ const techChips = [
   "Google Sheets",
   "Tone.js",
   "Zustand",
+  "Dexie",
+  "IndexedDB",
+  "SheetJS",
   "PWA",
   "EmailJS",
   "GitHub Actions",
@@ -150,9 +153,9 @@ if (app) {
       <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>${projects.length} productos · públicos y gratuitos</p>
       <h1 class="hero-title">Software hecho para usarse, en un solo clic.</h1>
       <p class="hero-lede">
-        ${capitalize(numWord(projects.length))} productos web en producción —gestión de protectora,
-        coordinación de jam sessions, biblioteca de transcripciones, entrenamiento de saxo y
-        galería de arte— disponibles ahora mismo, sin registros de por medio para probarlos.
+        ${capitalize(numWord(projects.length))} productos web en producción —gestión de actas y de
+        protectora, coordinación de jam sessions, biblioteca de transcripciones, entrenamiento de
+        saxo y galería de arte— disponibles ahora mismo, sin registros de por medio para probarlos.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#proyectos">Ver los proyectos</a>

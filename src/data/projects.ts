@@ -1,4 +1,4 @@
-export type ProjectIcon = "jam" | "reader" | "learn" | "paint" | "dash";
+export type ProjectIcon = "jam" | "reader" | "learn" | "paint" | "dash" | "doc";
 
 export interface Project {
   id: string;
@@ -83,5 +83,19 @@ export const projects: Project[] = [
     statusLabel: "En vivo",
     hue: 35,
     icon: "paint",
+  },
+  {
+    id: "dr-bilerak",
+    name: "Dr. Bilerak",
+    tagline: "Gestión de actas y reuniones",
+    description:
+      "Actas, agrupaciones y contactos con importación CSV/Excel, seguimiento de temas pendientes y exportación a PDF. Todo se guarda en el navegador.",
+    stack: ["JavaScript", "Dexie", "IndexedDB", "SheetJS", "PDF"],
+    demoUrl: "https://satisol-develop.github.io/dr-bilerak/",
+    repoUrl: "https://github.com/satisol-develop/dr-bilerak",
+    statusLabel: "En vivo",
+    note: "Requiere cuenta de acceso",
+    hue: 330,
+    icon: "doc",
   },
 ];
