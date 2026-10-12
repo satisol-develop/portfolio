@@ -20,7 +20,15 @@ npm run build      # typecheck + build a dist/
 npm run preview    # previsualizar el build
 ```
 
-Stack: **Vite + TypeScript estricto + ESLint flat**, sin dependencias en runtime. El contenido de los proyectos vive en `src/data/projects.ts`; para añadir un producto basta con añadir una entrada.
+Stack: **Vite + TypeScript estricto + ESLint flat**, sin dependencias en runtime. El contenido de los proyectos vive en `src/data/projects.ts`; para añadir un producto basta con añadir una entrada (y su captura en `public/screenshots/{id}.jpg`).
+
+El sitio es dark premium por defecto con **toggle a modo claro** (persistido en `localStorage`). Las capturas de las tarjetas se generan con Edge headless:
+
+```bash
+msedge --headless=new --disable-gpu --no-sandbox --hide-scrollbars `
+  --window-size=1280,800 --virtual-time-budget=15000 `
+  --screenshot=public/screenshots/{id}.png https://…/ URL del producto
+```
 
 ## Despliegue
 
